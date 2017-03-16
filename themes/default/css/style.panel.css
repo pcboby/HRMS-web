@@ -1,0 +1,52 @@
+.panel {
+	position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+    padding: 5px;
+}
+.panel::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0;
+	right: 0;
+	height: 4px;
+    background-image: -webkit-linear-gradient(to left, #afcbb3, #cfb8ec, #b9dcf0);
+    background-image: linear-gradient(to left, #afcbb3, #cfb8ec, #b9dcf0);
+}
+
+.panel .panel-header {
+	position: relative;
+}
+.panel .panel-header::before{
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: 0;
+	right: 0;
+	height: 1px;
+    background-image: -webkit-linear-gradient(to left, #afcbb3, #cfb8ec, #b9dcf0);
+    background-image: linear-gradient(to left, #afcbb3, #cfb8ec, #b9dcf0);
+}
+
+.panel .panel-header h3 {
+	margin: 0;
+	padding: 5px 20px;
+	line-height: 36px;
+	position: relative;
+	font-weight: normal;
+
+}
+.panel .panel-header h3::before{
+	position: absolute;
+	content: '';
+	left: 5px;
+	top: 10px;
+	bottom: 10px;
+	width: 7px;
+	background-color: #f90;
+}
+
+.panel .panel-body {
+	padding: 20px 68px 40px 68px;
+	margin-bottom: 5px;
+}

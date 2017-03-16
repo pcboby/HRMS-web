@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>薪酬福利－年度收入概览</title>
+    <link rel="stylesheet" href="../../../themes/default/css/style.css">
+    <script src="../../../libs/jquery/dist/jquery.min.js"></script>
+    <script src="../../../libs/highcharts/highcharts.js"></script>
+    <script src="../../../scripts/common.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="contents"></div>
+    </div>
+    <div class="silder">
+        <div class="contents">
+            <div class="list-navmenu">
+                <ul class="master">
+                    <li>
+                        <a>
+                            <span>个人信息</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>考勤</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a>
+                            <span>薪酬福利</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>户籍</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>个人绩效</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>任职资格</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>学习与发展</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>证明开具</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>签证</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>卡证</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span>离职</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sub">
+                	<li>
+                		<a>
+                			<span>纳税地信息</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>我的工资单</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>我的奖金</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>TUP信息</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>我的福利</span>
+                		</a>
+                	</li>
+                	<li class="active">
+                		<a>
+                			<span>年收入概览</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>支付单</span>
+                		</a>
+                	</li>
+                	<li>
+                		<a>
+                			<span>常用链接</span>
+                		</a>
+                	</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wraper">
+        <div class="contents">
+        	<!--  -->
+            <div class="panel">
+                <div class="panel-body pd-b-20">
+                    <div class="row">
+                        <div class="col-3">
+                            <div>代军第 00206509</div>
+                            <div class="font-12 color-13">高级工程师Ａ</div>
+                            <div class="font-12 color-13">纳税地：<i class="glyphicon glyphicon-map-marker"></i> 深圳</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group mg-t-10">
+                                <span>年度查询</span>
+                                <select name="" id="">
+                                    <option value="2016">2014</option>
+                                    <option value="2016">2015</option>
+                                    <option value="2016" selected>2016</option>
+                                    <option value="2016">2017</option>
+                                </select>
+                                <button>查询</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pull-right font-12 color-13">
+                        数据截止时间：2017/03/01
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="null-spacer"></div>
+            <!--  -->
+            <div class="panel">
+                <div class="panel-header">
+                    <h3>年度总收入（税前）</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div id="chartAnnual" style="height: 232px; background-color: #f1f1f1;"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="list-gross" style="width:300px;">
+                                <div class="title">年度总收入（税前）<span class="pull-right font-18 color-01 strong">CNY 840,000.00</span></div>
+                                <ul>
+                                    <li>
+                                        <a><i class="glyphicon glyphicon-credit-card block-05"></i><span>工资</span><span class="color-13">15%</span><span class="pull-right">CNY 240,000.00</span></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="glyphicon glyphicon-usd block-04"></i><span>津贴补助</span><span class="color-13">15%</span><span class="pull-right">CNY 240,000.00</span></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="glyphicon glyphicon-piggy-bank block-03"></i><span>奖金</span><span class="color-13">15%</span><span class="pull-right">CNY 240,000.00</span></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="glyphicon glyphicon-equalizer block-02"></i><span>TUP</span><span class="color-13">15%</span><span class="pull-right">CNY 240,000.00</span></a>
+                                    </li>
+                                    <li>
+                                        <a><i class="glyphicon glyphicon-gift block-01"></i><span>福利</span><span class="color-13">15%</span><span class="pull-right">CNY 240,000.00</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="panel-header">
+                    <h3>工资（税前）</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="title title-lg text-center"><img src="../../../themes/default/images/img_01.png" alt="" class="mg-r-10"><span class="mg-r-10">全年总收入（税前）</span><span class="font-18 color-01 strong mg-r-20">CNY 840,000.00</span><a class="a-01 font-12">查看您的月度工资明细</a></div>
+                    <div class="html-content">
+                        <p>您的工资是基于您的岗位职责和贡献所支付的，并且已经贴心的考虑了您的一日三餐和上下班交通等日常生活支出。同时我们会通过定期的市场调研，确保您工资水平的竞争力哦！</p>
+                    </div>
+                </div>
+                <div class="panel-header">
+                    <h3>津贴补助</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="title title-lg text-center"><span class="mg-r-10">全年津贴补助总收入</span><span class="font-18 color-01 strong mg-r-20">CNY 840,000.00</span></div>
+                    <div class="html-content mg-l-20">
+                        <p class="font-14 color-13">您的津贴补助包括以下：</p>
+                    </div>
+                    <div class="row mg-l-20">
+                        <div class="col-7">
+                            <div class="list-columnchart mg-l-20">
+                                <ul>
+                                    <li>
+                                        <a style="width: 40%;" label="岗位津贴" tips="2,000.00">
+                                            <span style="background-color: #78d6f5;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="width: 100%;" label="外派补助" tips="5,027.49">
+                                            <span style="background-color: #7897f5;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="width: 1%;" label="通讯补贴" tips="1,000.00">
+                                            <span style="background-color: #f58d36;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="width: 45%;" label="住房补贴" tips="3,000.00">
+                                            <span style="background-color: #54bc9b;"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <div class="list-item">
+                                            <a class="a-01 font-12 mg-r-20">查看月度明细</a>
+                                            <span class="font-12 color-13">体现您的岗位独特价值和贡献</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <a class="a-01 font-12 mg-r-20">查看月度明细</a>
+                                            <span class="font-12 color-13">为您外派提供的补助</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <a class="a-01 font-12 mg-r-20">查看月度明细</a>
+                                            <span class="font-12 color-13">为您的通讯话费提供的补助</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <a class="a-01 font-12 mg-r-20">查看月度明细</a>
+                                            <span class="font-12 color-13">为您的住房保障政策提供的补助</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="panel-header">
+                    <h3>奖金</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="title title-lg text-center"><span class="mg-r-10">全年（发放）各项奖金总收入</span><span class="font-18 color-01 strong mg-r-20">CNY 840,000.00</span><a class="a-01 font-12">查看明细</a></div>
+                    <div class="html-content mg-l-20">
+                        <p class="font-14 color-13">公司实行获取分享的奖金制度，也就是说您的奖金是靠自己的贡献挣来的哦！您的奖金包括以下：</p>
+                    </div>
+                    <div class="row mg-l-20">
+                        <div class="col-1"></div>
+                        <div class="col-6">
+                            <div class="list-columnchart-dire mg-l-20 mg-r-20" style="height: 208px;">
+                                <ul>
+                                    <li>
+                                        <a style="height: 45%;" label="年度奖金" tips="2,000.00">
+                                            <span style="background-color: #4f81bd;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="height: 100%;" label="及时激励" tips="5,027.49">
+                                            <span style="background-color: #ffc000;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="height: 1%;" label="多元化激励" tips="1,000.00">
+                                            <span style="background-color: #00b050;"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a style="height: 45%;" label="奖金授予" tips="3,000.00">
+                                            <span style="background-color: #348faa;"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-4">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <div class="list-item">
+                                            <span class="font-15 mg-r-20" style="width:5em;">年度奖金</span>
+                                            <span class="font-12 color-13">基于您的综合绩效</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <span class="font-15 mg-r-20" style="width:5em;">及时激励</span>
+                                            <span class="font-12 color-13">基于您在项目中的贡献</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <span class="font-15 mg-r-20" style="width:5em;">多元化激励</span>
+                                            <span class="font-12 color-13">为您提供日常的激励</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list-item">
+                                            <span class="font-15 mg-r-20" style="width:5em;">奖金授予</span>
+                                            <span class="font-12 color-13">根据公司业绩所得奖励</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="panel-header">
+                    <h3>TUP</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="title title-lg text-center"><span class="mg-r-10">全年TUP总授予</span><span class="font-18 color-01 strong mg-r-20">CNY 840,000.00</span><a class="a-01 font-12">查看明细</a></div>
+                    <div class="html-content">
+                        <p class="font-14 color-13">您的TUP是为了让您与公司共同成长，分享公司长期价值增长而授予的！您的授予情况如下：</p>
+                    </div>
+                    <div class="list-columntree" style="height: 258px;">
+                        <ul>
+                            <li></li>
+                            <li>
+                                <a style="height: 45%;" label="2014.12" tips="1,000"><span></span></a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a style="height: 40%;" label="2015.4" tips="800"><span></span></a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a style="height: 1%;" label="2015.9" tips="160"><span></span></a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a style="height: 100%;" label="2015.12" tips="2,300"><span></span></a>
+                            </li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li>
+                                <a style="height: 55%;" label="2016.5" tips="1,300"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="html-content">
+                        <p class="color-12">此为初步数据，您被授予的TUP的具体数量，以您《TUP承诺虑函》和《TUP授予通知单》确定的数据为准。</p>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="panel-header">
+                    <h3>福利</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="title title-lg text-center"><span class="mg-r-10">全年为您提供的（可货币化的）福利价值合计</span><span class="font-18 color-01 strong mg-r-20">CNY 840,000.00</span><a class="a-01 font-12">查看明细</a></div>
+                    <div class="html-content">
+                        <p class="font-14 color-13">我们为您提供的福利包括以下内容</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <img src="../../../themes/default/images/img_11.png" alt="">
+                                    <p class="font-14 no-indent">保险</p>
+                                </div>
+                                <div class="mg-10">
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">社会保险：</span>为了让您可以享受国家社保机构所提供的保障待遇，公司为您缴纳了法定社保（包含养老保险、医疗保险、生育保险、工伤保险、失业保险和住房公积金）。
+                                        <br>
+                                        <a class="a-01 font-12">查看缴费明细和待遇享受指南</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">商业保险：</span>为了让您可以在法定社保之外可以获得合理的补充保障，无后顾之忧，公司为您购买了商业保险（包含意外险、重大疾病险、寿险，如出差外派海外，还能享受商务旅行险）。
+                                        <br>
+                                        <a class="a-01 font-12">查看保险待遇和索赔指南</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center">
+                                    <img src="../../../themes/default/images/img_12.png" alt="">
+                                    <p class="font-14 no-indent">外派福利</p>
+                                </div>
+                                <div class="mg-10">
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">体检：</span>为了确保您的身体棒棒，公司为您提供每年一次的健康体检，价值高达CNY 1500/次。
+                                        <br>
+                                        <a class="a-01 font-12">查看详情</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">探亲机票：</span>为了让您在国际派遣时能和家人团聚，公司为您提供了每四个月一套探亲机票。
+                                        <br>
+                                        <a class="a-01 font-12">查看您的机票配额详情</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">通讯费报销：</span>您因为产生的通讯费用，可在规定制度内报销。
+                                        <br>
+                                        <a class="a-01 font-12">查看详情</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">免费加/夜班车：</span>考虑到您加班工作的辛苦，公司提供了免费乘坐加/夜班车，把您送到家。
+                                        <br>
+                                        <a class="a-01 font-12">查看详情</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">加班夜宵补助：</span>您加班后，还可按公司规定获得夜宵补助。
+                                        <br>
+                                        <a class="a-01 font-12">查看详情</a>
+                                    </p>
+                                    <p class="no-indent color-12">
+                                        <span class="color-14">弹性工作时间：</span>根据您的工作性质，您可以按照公司规定适用弹性工作时间。
+                                        <br>
+                                        <a class="a-01 font-12">查看详情</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

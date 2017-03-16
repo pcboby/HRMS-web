@@ -1,0 +1,30 @@
+.font-12{
+	font-size: 12px;
+}
+.font-14{
+	font-size: 14px;
+}
+.font-15{
+	font-size: 15px;
+}
+.font-16{
+	font-size: 16px;
+}
+.font-18{
+	font-size: 18px;
+}
+.font-20{
+	font-size: 20px;
+}
+.strong{
+	font-weight: blod;
+}
+
+a.a-01{
+	cursor: pointer;
+	color: #1693d1;
+}
+a.a-01:hover{
+	cursor: pointer;
+	opacity: .75;
+}

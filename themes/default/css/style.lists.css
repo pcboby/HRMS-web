@@ -1,0 +1,367 @@
+
+
+/*  */
+
+.list ul,
+.list ul li,
+.list-gross ul,
+.list-gross ul li,
+.list-columnchart ul,
+.list-columnchart ul li,
+.list-columnchart-dire ul,
+.list-columnchart-dire ul li ,
+.list-columntree ul,
+.list-columntree ul li ,
+.list-navmenu ul,
+.list-navmenu ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+/*  */
+
+.list {}
+
+.list ul {}
+
+.list ul li {
+    margin: 20px 0;
+}
+
+.list-item {
+    line-height: 22px;
+}
+
+
+/*  */
+
+.list-gross {}
+
+.list-gross ul {}
+
+.list-gross ul li {
+    display: block;
+    background-color: #e2e2e2;
+    margin-top: 10px;
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, .25); */
+}
+.list-gross ul li:hover{
+    background-color: #f1f1f1;
+}
+
+.list-gross ul li a {
+    display: block;
+    line-height: 28px;
+}
+
+.list-gross ul li a i {
+    position: relative;
+    top: 0;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    width: 32px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.list-gross ul li a span {
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+/*  */
+
+.list-columnchart {}
+
+.list-columnchart ul {}
+
+.list-columnchart ul li {
+    display: block;
+    padding-left: 5em;
+    padding-right: 6em;
+    margin: 20px 0;
+}
+
+.list-columnchart ul li a {
+    display: block;
+    position: relative;
+    line-height: 22px;
+}
+
+.list-columnchart ul li a::before {
+    position: absolute;
+    content: attr(label);
+    font-size: 14px;
+    margin-right: 10px;
+    right: 100%;
+    top: 0;
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 不换行 */
+    /* overflow:hidden;
+	text-overflow:ellipsis; */
+}
+
+.list-columnchart ul li a::after {
+    position: absolute;
+    content: attr(tips);
+    font-size: 14px;
+    font-weight: blod;
+    color: #f90;
+    margin-left: 10px;
+    left: 100%;
+    top: 0;
+}
+
+.list-columnchart ul li a span {
+    display: block;
+    background-color: gray;
+    height: 22px;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-columnchart ul li a:hover span {
+    opacity: .75;
+}
+
+
+/*  */
+
+.list-columnchart-dire {}
+
+.list-columnchart-dire ul {
+    display: flex;
+    height: 100%;
+}
+
+.list-columnchart-dire ul li {
+    flex: 1;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.list-columnchart-dire ul li a {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    margin: 0 30%;
+}
+
+.list-columnchart-dire ul li a::before {
+    content: attr(label);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    line-height: 2em;
+    text-align: center;
+    white-space: nowrap;
+    /* 不换行 */
+    width: 8em;
+    margin-left: -4em;
+}
+
+.list-columnchart-dire ul li a::after {
+    content: attr(tips);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    font-weight: blod;
+    color: #f90;
+    line-height: 2em;
+    text-align: center;
+    white-space: nowrap;
+    /* 不换行 */
+    width: 8em;
+    margin-left: -4em;
+}
+
+.list-columnchart-dire ul li a span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.list-columnchart-dire ul li a:hover span {
+    opacity: .75;
+}
+
+/*  */
+.list-columntree{
+	padding-bottom: 48px;
+	padding-top: 60px;
+    overflow-x: auto;
+}
+.list-columntree ul{
+    min-width: 100%;
+	height: 100%;
+	background-image: url('../images/bLine_01.png');
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	padding-bottom: 26px;
+}
+.list-columntree ul li{
+    float: left;
+	height: 100%;
+	width: 40px;
+	position: relative;
+}
+.list-columntree ul li.space{
+    width: auto;
+}
+.list-columntree ul li a{
+	position: absolute;
+	bottom: 0;
+}
+.list-columntree ul li a:hover{
+	opacity: .75;
+}
+.list-columntree ul li a::before{
+	content: attr(label);
+	position: absolute;
+	top: 100%;
+	line-height: 48px;
+	margin-top: 26px;
+	width: 100px;
+	margin-left: -50px;
+	text-align: center;
+}
+.list-columntree ul li a::after{
+	content: attr(tips);
+	position: absolute;
+	left: 50%;
+	margin-left: -25px;
+	bottom: 100%;
+	height: 60px;
+	width: 53px;
+	background-image: url('../images/bLine_02.png');
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	line-height: 48px;
+}
+.list-columntree ul li a span{
+	position: absolute;
+	height: 100%;
+}
+.list-columntree ul li a span::before{
+	position: absolute;
+	content: '';
+	top: 0;
+	bottom: 0;
+	left: 0px;
+	width: 2px;
+	background-color: #54bc9b;
+}
+.list-columntree ul li a span::after{
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: -4px;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #54bc9b;
+	border-radius: 100%;
+}
+
+/*  */
+
+.list-navmenu{}
+.list-navmenu ul.master{
+    display: flex;
+    width: 100%;
+    position: relative;
+    line-height: 36px;
+}
+.list-navmenu ul.master::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #ddd;
+}
+.list-navmenu ul.master li{
+    flex: 1;
+    padding: 0px 3px;
+}
+.list-navmenu ul.master li:first-child{
+    padding-left: 0px;
+}
+.list-navmenu ul.master li:last-child{
+    padding-right: 0px;
+}
+.list-navmenu ul.master li a{
+    display: block;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.list-navmenu ul.master li:hover a{
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.list-navmenu ul.master li.active{
+}
+.list-navmenu ul.master li.active a{
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    z-index: 1;
+}
+.list-navmenu ul.master li.active a::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 3px;
+    background-color: #f90;
+}
+.list-navmenu ul.master li.active a::after{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    height: 1px;
+    background-color: #fff;
+}
+.list-navmenu ul.sub{
+    padding: 10px 0;
+}
+.list-navmenu ul.sub li{
+    display: inline-block;
+    margin: 0 .75em;
+}
+.list-navmenu ul.sub li a{
+    display: block;
+    padding: 0 .75em;
+    line-height: 32px;
+    color: #999;
+}
+.list-navmenu ul.sub li.active a{
+    border: 1px solid #ddd;
+    color: #f90;
+}
+.list-navmenu ul.sub li:hover a{
+    color: #f90;
+}
+
+
+
+
