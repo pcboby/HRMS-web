@@ -6,8 +6,18 @@ $(function() {
         })
     })
     $('.list-columntree').each(function(idx,e){
-        $(e).find('ul').width($(e).find('li').length*40);
+        $(e).find('ul').width($(e).find('li').length*40)
+        // .scrollbar();
     })
+    $('.list-scrollBar').find('a').each(function(idx, e) {
+        $(e).not('.goTop').click(function(){
+            $(this).parent().addClass('active').siblings().removeClass('active');
+            // $('html,body').animate({
+            //     scrollTop: $($(this).attrs('href')).offset().top
+            // }, 2000);
+            // return false
+        })
+    });
     $('#chartAnnual').highcharts({
         chart: {
             plotBackgroundColor: null,

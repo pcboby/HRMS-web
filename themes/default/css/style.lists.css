@@ -13,14 +13,48 @@
 .list-columntree ul,
 .list-columntree ul li ,
 .list-navmenu ul,
-.list-navmenu ul li {
+.list-navmenu ul li,
+.list-scrollBar ul,
+.list-scrollBar ul li {
     margin: 0;
     padding: 0;
     list-style: none;
     list-style-type: none;
 }
 
+/*  */
+.list-scrollBar{
+    position: fixed;
+    top: 50%;
+    margin-top: -12.5%;
 
+}
+.list-scrollBar ul{
+    background-color: #f1f1f1;
+}
+.list-scrollBar ul li{
+    display: block;
+}
+.list-scrollBar ul li a{
+    display: block;
+    line-height: 24px;
+    padding: 10px;
+    text-align: center;
+    color: #999;
+}
+.list-scrollBar ul li a:hover{
+    opacity: .75;
+    background-color: #fff;
+}
+.list-scrollBar ul li a.goTop{
+    background-color: #666;
+    color: #fff;
+}
+.list-scrollBar ul li.active a{
+    opacity: 1;
+    color: #fff;
+    background-color: #f90;
+}
 /*  */
 
 .list {}

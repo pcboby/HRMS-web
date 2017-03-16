@@ -23,6 +23,11 @@ a,span,img{
 	vertical-align: top;
 }
 
+a,a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {}
 
 .silder {}
