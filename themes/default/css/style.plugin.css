@@ -92,6 +92,9 @@ a,a:hover{
     clear: both;
     display: block;
 }
+.mg-none{
+    margin: 0 !important;
+}
 .mg-5{
 	margin: 5px !important;
 }
@@ -102,7 +105,13 @@ a,a:hover{
 	margin: 15px !important;
 }
 .mg-20{
-	margin: 20px !important;
+    margin: 20px !important;
+}
+.mg-30{
+    margin: 30px !important;
+}
+.mg-40{
+    margin: 40px !important;
 }
 .mg-t-5{
 	margin-top: 5px !important;
@@ -114,7 +123,13 @@ a,a:hover{
 	margin-top: 15px !important;
 }
 .mg-t-20{
-	margin-top: 20px !important;
+    margin-top: 20px !important;
+}
+.mg-t-30{
+    margin-top: 30px !important;
+}
+.mg-t-40{
+    margin-top: 20px !important;
 }
 .mg-r-5{
 	margin-right: 5px !important;
@@ -126,7 +141,13 @@ a,a:hover{
 	margin-right: 15px !important;
 }
 .mg-r-20{
-	margin-right: 20px !important;
+    margin-right: 20px !important;
+}
+.mg-r-30{
+    margin-right: 30px !important;
+}
+.mg-r-40{
+    margin-right: 40px !important;
 }
 .mg-b-5{
 	margin-bottom: 5px !important;
@@ -138,7 +159,13 @@ a,a:hover{
 	margin-bottom: 15px !important;
 }
 .mg-b-20{
-	margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
+}
+.mg-b-30{
+    margin-bottom: 30px !important;
+}
+.mg-b-40{
+    margin-bottom: 40px !important;
 }
 .mg-l-5{
 	margin-left: 5px !important;
@@ -150,9 +177,18 @@ a,a:hover{
 	margin-left: 15px !important;
 }
 .mg-l-20{
-	margin-left: 20px !important;
+    margin-left: 20px !important;
+}
+.mg-l-30{
+    margin-left: 30px !important;
+}
+.mg-l-40{
+    margin-left: 40px !important;
 }
 /*  */
+.pd-none{
+    padding: 0 !important;
+}
 .pd-5{
     padding: 5px !important;
 }
@@ -177,6 +213,12 @@ a,a:hover{
 .pd-t-20{
     padding-top: 20px !important;
 }
+.pd-t-30{
+    padding-top: 30px !important;
+}
+.pd-t-40{
+    padding-top: 40px !important;
+}
 .pd-r-5{
     padding-right: 5px !important;
 }
@@ -188,6 +230,12 @@ a,a:hover{
 }
 .pd-r-20{
     padding-right: 20px !important;
+}
+.pd-r-30{
+    padding-right: 30px !important;
+}
+.pd-r-40{
+    padding-right: 40px !important;
 }
 .pd-b-5{
     padding-bottom: 5px !important;
@@ -201,6 +249,12 @@ a,a:hover{
 .pd-b-20{
     padding-bottom: 20px !important;
 }
+.pd-b-30{
+    padding-bottom: 30px !important;
+}
+.pd-b-40{
+    padding-bottom: 40px !important;
+}
 .pd-l-5{
     padding-left: 5px !important;
 }
@@ -212,6 +266,25 @@ a,a:hover{
 }
 .pd-l-20{
     padding-left: 20px !important;
+}
+.pd-l-30{
+    padding-left: 30px !important;
+}
+.pd-l-40{
+    padding-left: 40px !important;
+}
+/*  */
+.bd-t{
+    border-top: 1px solid #eee;
+}
+.bd-r{
+    border-right: 1px solid #eee;
+}
+.bd-b{
+    border-bottom: 1px solid #eee;
+}
+.bd-l{
+    border-left: 1px solid #eee;
 }
 /*  */
 .row .col-12,

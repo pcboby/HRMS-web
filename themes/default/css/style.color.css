@@ -47,8 +47,11 @@
 .color-14{
 	color: #333;
 }
+.color-red{
+	color: red;
+}
 /* background colors */
-.block-00,.block-01,.block-02,.block-03,.block-04,.block-05,.block-06,.block-07,.block-08,.block-09,.block-10,.block-11,.block-12{
+.block-00,.block-01,.block-02,.block-03,.block-04,.block-05,.block-06,.block-07,.block-08,.block-09,.block-10,.block-11,.block-12,.block-13{
 	color: #fff;
 }
 .block-00{
@@ -90,6 +93,9 @@
 .block-11{
 	background-color: #666666;
 }
-.block-12{
-	background-color: #9c9c9c;
+.block-13{
+	background-color: #f1469a;
+}
+.block-11{
+	background-color: #666666;
 }

@@ -104,7 +104,57 @@
 
 .list-gross ul li a span {
     font-size: 12px;
-    margin-right: 10px;
+}
+.list-gross.mux {
+    display: inline-block;
+}
+
+.list-gross.mux ul {}
+
+.list-gross.mux ul li {
+    margin: 1px;
+}
+
+.list-gross.mux ul li a>* {
+    padding: 5px 0px;
+}
+
+.list-gross.mux ul li a i {
+    height: 38px;
+}
+
+.list-gross.mux ul li a span{
+    margin: 0;
+}
+.list-gross.mux ul li:nth-child(even) a span.block-y {
+    border-left: 1px solid #fff;
+    background-color: #fff4e5;
+}
+.list-gross.mux ul li:nth-child(odd) a span.block-y {
+    border-left: 1px solid #fff;
+    background-color: #f5eadb;
+}
+.list-gross.mux ul li:nth-child(even) a span.block-b {
+    border-left: 1px solid #fff;
+    background-color: #e7f3f9;
+}
+.list-gross.mux ul li:nth-child(odd) a span.block-b {
+    border-left: 1px solid #fff;
+    background-color: #ddeaf0;
+}
+.list-gross.mux ul li:hover{
+}
+.list-gross.mux ul li:hover:nth-child(even) a span.block-y {
+    background-color: #fff8ee;
+}
+.list-gross.mux ul li:hover:nth-child(odd) a span.block-y {
+    background-color: #fef4e6;
+}
+.list-gross.mux ul li:hover:nth-child(even) a span.block-b {
+    background-color: #f0fafe;
+}
+.list-gross.mux ul li:hover:nth-child(odd) a span.block-b {
+    background-color: #e6f2f8;
 }
 
 

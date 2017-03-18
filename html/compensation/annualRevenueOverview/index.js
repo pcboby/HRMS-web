@@ -36,7 +36,7 @@ $(function() {
             pie: {
                 allowPointSelect: true,
                 cursor: 'pointer',
-                colors: ['#54bc9b', '#348faa', '#8562a4', '#f14946', '#f58d36'],
+                colors: ['#54bc9b', '#348faa', '#8562a4', '#f14946', '#f58d36','#f1469a'],
                 dataLabels: {
                     enabled: false,
                     format: '<b>{point.name}</b>: {point.percentage:.1f} %',
@@ -75,13 +75,16 @@ $(function() {
                 y: 30
             }, {
                 name: '奖金',
-                y: 45
+                y: 40
             }, {
                 name: 'TUP',
                 y: 6
             }, {
                 name: '福利',
                 y: 4
+            }, {
+                name: '其它',
+                y: 5
             }]
         }]
     }, function(c) {
